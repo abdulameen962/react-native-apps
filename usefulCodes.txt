@@ -1,0 +1,9 @@
+For prebuilding an app
+npx expo prebuild
+
+for development builds
+eas build --profile development --platform android 
+incase you dont have git with it use this command instead
+npx cross-env EAS_NO_VCS=1 eas build --profile development --platform android 
+
+npx cross-env EAS_NO_VCS=1 eas build --platform all
